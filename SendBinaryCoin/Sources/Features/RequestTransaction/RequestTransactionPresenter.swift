@@ -41,7 +41,9 @@ extension RequestTransactionPresenter: RequestTransactionPresenterInputProtocol 
 
 // MARK: - Output Protocol
 extension RequestTransactionPresenter: RequestTransactionInteractorOutputProtocol {
-    
+    func viewDidLoad() {
+        viewController?.set(title: RequestTransactionViewStrings.navigationTitle)
+    }
 }
 
 // MARK: - Analytics

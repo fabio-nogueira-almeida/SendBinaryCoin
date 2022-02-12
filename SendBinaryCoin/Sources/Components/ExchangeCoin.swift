@@ -7,6 +7,12 @@
 
 import Foundation
 
-struct ExchangeCoin {
-    
+struct Exchange {
+    static func binary(from decimal: Int) -> String {
+        String(decimal, radix: 2)
+    }
+
+    static func decimal(from binary: String) -> Int? {
+        Int(binary, radix: 2)
+    }
 }

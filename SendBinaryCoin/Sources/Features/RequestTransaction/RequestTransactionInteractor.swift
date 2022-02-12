@@ -5,8 +5,6 @@
 //  Created by Fabio Nogueira on 12/02/22.
 //
 
-import NetworkCore
-
 final class RequestTransactionInteractor {
     
     // MARK: - VIPER Properties
@@ -15,11 +13,11 @@ final class RequestTransactionInteractor {
 
     // MARK: - Private Properties
     
-    private let request: <#NetworkCoreRequestable#>
+    private let request: Network
 
     // MARK: - Inits
     
-    init(request: <#NetworkCoreRequestable#>) {
+    init(request: Network) {
         self.request = request
     }
 

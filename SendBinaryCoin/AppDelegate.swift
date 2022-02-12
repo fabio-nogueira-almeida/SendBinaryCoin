@@ -13,9 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let view = UIViewController()
-        view.view.backgroundColor = .red
-        window?.rootViewController = UINavigationController(rootViewController: view)
+
+        let router = RequestTransactionRouter()
+        window?.rootViewController = router.start()
+
         window?.makeKeyAndVisible()
         return true
     }

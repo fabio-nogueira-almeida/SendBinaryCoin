@@ -17,6 +17,8 @@ final class RequestTransactionViewController: UIViewController {
 
     // MARK: - Private Properties
 
+    private var containerView = RequestTransactionView()
+
     // MARK: - Inits
     
     init(presenter: RequestTransactionPresenterInputProtocol) {
@@ -33,7 +35,8 @@ final class RequestTransactionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        self.view = containerView
+        presenter.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,22 +51,9 @@ final class RequestTransactionViewController: UIViewController {
     // MARK: - Actions
 }
 
-// MARK: - View Code
-extension RequestTransactionViewController: SomaViewCode {
-    func buildViewHierarchy() {
-        
-    }
-    
-    func setupConstraints() {
-        
-    }
-    
-    func setupAdditionalConfiguration() {
-        
-    }
-}
-
 // MARK: - Presenter Output Protocol
 extension RequestTransactionViewController: RequestTransactionPresenterOutputProtocol {
-
+    func set(title: String) {
+        navigationController?.title = title
+    }
 }

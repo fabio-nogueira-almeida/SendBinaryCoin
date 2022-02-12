@@ -5,7 +5,6 @@
 //  Created by Fabio Nogueira on 12/02/22.
 //
 
-import SomaiOS
 import UIKit
 
 final class RequestTransactionViewController: UIViewController {

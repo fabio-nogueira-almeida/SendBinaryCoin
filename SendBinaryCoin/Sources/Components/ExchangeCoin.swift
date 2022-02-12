@@ -1,8 +1,12 @@
 //
-//  BinaryCoin.swift
+//  ExchangeCoin.swift
 //  SendBinaryCoin
 //
 //  Created by Fabio Nogueira on 12/02/22.
 //
 
 import Foundation
+
+struct ExchangeCoin {
+    
+}

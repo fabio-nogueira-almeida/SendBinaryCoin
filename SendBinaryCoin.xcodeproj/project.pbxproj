@@ -18,7 +18,8 @@
 		2808D38C27B84CD8000DF9F3 /* RequestTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D38627B84CD8000DF9F3 /* RequestTransactionViewController.swift */; };
 		2808D38D27B84CD8000DF9F3 /* RequestTransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D38727B84CD8000DF9F3 /* RequestTransactionRouter.swift */; };
 		2808D39127B84D74000DF9F3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D39027B84D74000DF9F3 /* Network.swift */; };
-		2808D39327B84D8B000DF9F3 /* BinaryCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D39227B84D8B000DF9F3 /* BinaryCoin.swift */; };
+		2808D39327B84D8B000DF9F3 /* ExchangeCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D39227B84D8B000DF9F3 /* ExchangeCoin.swift */; };
+		2808D39827B850A8000DF9F3 /* RateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D39727B850A8000DF9F3 /* RateResponse.swift */; };
 		68BBF478697758DD300073EE /* Pods_SendBinaryCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C08D253BC38FB56FE5D4DD /* Pods_SendBinaryCoinTests.framework */; };
 		A47FAF99BA467C675335533F /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D2EA231AFEBBB61125C9DF /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */; };
 		E64C4399708D8196C5589309 /* Pods_SendBinaryCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */; };
@@ -59,7 +60,8 @@
 		2808D38627B84CD8000DF9F3 /* RequestTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransactionViewController.swift; sourceTree = "<group>"; };
 		2808D38727B84CD8000DF9F3 /* RequestTransactionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransactionRouter.swift; sourceTree = "<group>"; };
 		2808D39027B84D74000DF9F3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		2808D39227B84D8B000DF9F3 /* BinaryCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCoin.swift; sourceTree = "<group>"; };
+		2808D39227B84D8B000DF9F3 /* ExchangeCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCoin.swift; sourceTree = "<group>"; };
+		2808D39727B850A8000DF9F3 /* RateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResponse.swift; sourceTree = "<group>"; };
 		4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendBinaryCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87339F56C19180A5E1FAA9D3 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E15E0D2AF54D46A0EAF6015 /* Pods-SendBinaryCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,7 +190,7 @@
 		2808D38F27B84D16000DF9F3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2808D39227B84D8B000DF9F3 /* BinaryCoin.swift */,
+				2808D39227B84D8B000DF9F3 /* ExchangeCoin.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -213,6 +215,7 @@
 		2808D39627B84DB3000DF9F3 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				2808D39727B850A8000DF9F3 /* RateResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -460,10 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2808D39827B850A8000DF9F3 /* RateResponse.swift in Sources */,
 				2808D38A27B84CD8000DF9F3 /* RequestTransactionConfigurator.swift in Sources */,
 				2808D38D27B84CD8000DF9F3 /* RequestTransactionRouter.swift in Sources */,
 				2808D38827B84CD8000DF9F3 /* RequestTransactionProtocols.swift in Sources */,
-				2808D39327B84D8B000DF9F3 /* BinaryCoin.swift in Sources */,
+				2808D39327B84D8B000DF9F3 /* ExchangeCoin.swift in Sources */,
 				2808D38927B84CD8000DF9F3 /* RequestTransactionPresenter.swift in Sources */,
 				2808D34227B846E2000DF9F3 /* AppDelegate.swift in Sources */,
 				2808D39127B84D74000DF9F3 /* Network.swift in Sources */,

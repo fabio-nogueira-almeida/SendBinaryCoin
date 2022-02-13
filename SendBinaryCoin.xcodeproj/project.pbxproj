@@ -28,8 +28,20 @@
 		2808D3A727B87252000DF9F3 /* RequestTransactionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3A627B87252000DF9F3 /* RequestTransactionViewData.swift */; };
 		2808D3A927B872F8000DF9F3 /* RateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3A827B872F8000DF9F3 /* RateRequest.swift */; };
 		2808D3AB27B87695000DF9F3 /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3AA27B87695000DF9F3 /* CountryDataSource.swift */; };
+		283F9D5327B8AF76009DFA63 /* RequestTransactionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D4E27B8AF76009DFA63 /* RequestTransactionViewControllerTests.swift */; };
+		283F9D5427B8AF76009DFA63 /* RequestTransactionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D4F27B8AF76009DFA63 /* RequestTransactionInteractorTests.swift */; };
+		283F9D5527B8AF76009DFA63 /* RequestTransactionRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D5027B8AF76009DFA63 /* RequestTransactionRouterTests.swift */; };
+		283F9D5627B8AF76009DFA63 /* RequestTransactionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D5127B8AF76009DFA63 /* RequestTransactionPresenterTests.swift */; };
+		283F9D5727B8AF76009DFA63 /* RequestTransactionConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D5227B8AF76009DFA63 /* RequestTransactionConfiguratorTests.swift */; };
+		283F9D5C27B8B1C1009DFA63 /* RequestTransactionPresenterInputSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D5B27B8B1C1009DFA63 /* RequestTransactionPresenterInputSpy.swift */; };
+		283F9D5E27B8B3A1009DFA63 /* Mirror.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D5D27B8B3A1009DFA63 /* Mirror.swift */; };
+		283F9D6027B8B47B009DFA63 /* RequestTransactionRouterProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D5F27B8B47B009DFA63 /* RequestTransactionRouterProtocolSpy.swift */; };
+		283F9D6227B8B494009DFA63 /* RequestTransactionPresenterOutputProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D6127B8B494009DFA63 /* RequestTransactionPresenterOutputProtocolSpy.swift */; };
+		283F9D6427B8B4A5009DFA63 /* RequestTransactionInteractorInputProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D6327B8B4A4009DFA63 /* RequestTransactionInteractorInputProtocolSpy.swift */; };
+		283F9D6627B8B5B5009DFA63 /* RequestTransactionInteractorOutputProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D6527B8B5B5009DFA63 /* RequestTransactionInteractorOutputProtocolSpy.swift */; };
+		283F9D6827B8BAC5009DFA63 /* RequestTransactionFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D6727B8BAC5009DFA63 /* RequestTransactionFixtures.swift */; };
+		283F9D6A27B8BEE2009DFA63 /* RequestTransactionViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F9D6927B8BEE1009DFA63 /* RequestTransactionViewSpy.swift */; };
 		68BBF478697758DD300073EE /* Pods_SendBinaryCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C08D253BC38FB56FE5D4DD /* Pods_SendBinaryCoinTests.framework */; };
-		A47FAF99BA467C675335533F /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D2EA231AFEBBB61125C9DF /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */; };
 		E64C4399708D8196C5589309 /* Pods_SendBinaryCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,17 +53,9 @@
 			remoteGlobalIDString = 2808D33D27B846E2000DF9F3;
 			remoteInfo = SendBinaryCoin;
 		};
-		2808D35F27B846E6000DF9F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2808D33627B846E2000DF9F3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2808D33D27B846E2000DF9F3;
-			remoteInfo = SendBinaryCoin;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C38CCA2D40B207E971FED09 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		255BBD6271C3A0F6ECD88932 /* Pods-SendBinaryCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoin.debug.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoin/Pods-SendBinaryCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		2808D33E27B846E2000DF9F3 /* SendBinaryCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendBinaryCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2808D34127B846E2000DF9F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +64,6 @@
 		2808D34D27B846E6000DF9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2808D34F27B846E6000DF9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2808D35427B846E6000DF9F3 /* SendBinaryCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendBinaryCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2808D35E27B846E6000DF9F3 /* SendBinaryCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendBinaryCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2808D38227B84CD8000DF9F3 /* RequestTransactionProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransactionProtocols.swift; sourceTree = "<group>"; };
 		2808D38327B84CD8000DF9F3 /* RequestTransactionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransactionPresenter.swift; sourceTree = "<group>"; };
 		2808D38427B84CD8000DF9F3 /* RequestTransactionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransactionConfigurator.swift; sourceTree = "<group>"; };
@@ -78,13 +81,24 @@
 		2808D3A627B87252000DF9F3 /* RequestTransactionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionViewData.swift; sourceTree = "<group>"; };
 		2808D3A827B872F8000DF9F3 /* RateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRequest.swift; sourceTree = "<group>"; };
 		2808D3AA27B87695000DF9F3 /* CountryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataSource.swift; sourceTree = "<group>"; };
+		283F9D4E27B8AF76009DFA63 /* RequestTransactionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionViewControllerTests.swift; sourceTree = "<group>"; };
+		283F9D4F27B8AF76009DFA63 /* RequestTransactionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionInteractorTests.swift; sourceTree = "<group>"; };
+		283F9D5027B8AF76009DFA63 /* RequestTransactionRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionRouterTests.swift; sourceTree = "<group>"; };
+		283F9D5127B8AF76009DFA63 /* RequestTransactionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionPresenterTests.swift; sourceTree = "<group>"; };
+		283F9D5227B8AF76009DFA63 /* RequestTransactionConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionConfiguratorTests.swift; sourceTree = "<group>"; };
+		283F9D5B27B8B1C1009DFA63 /* RequestTransactionPresenterInputSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionPresenterInputSpy.swift; sourceTree = "<group>"; };
+		283F9D5D27B8B3A1009DFA63 /* Mirror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror.swift; sourceTree = "<group>"; };
+		283F9D5F27B8B47B009DFA63 /* RequestTransactionRouterProtocolSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionRouterProtocolSpy.swift; sourceTree = "<group>"; };
+		283F9D6127B8B494009DFA63 /* RequestTransactionPresenterOutputProtocolSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionPresenterOutputProtocolSpy.swift; sourceTree = "<group>"; };
+		283F9D6327B8B4A4009DFA63 /* RequestTransactionInteractorInputProtocolSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionInteractorInputProtocolSpy.swift; sourceTree = "<group>"; };
+		283F9D6527B8B5B5009DFA63 /* RequestTransactionInteractorOutputProtocolSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionInteractorOutputProtocolSpy.swift; sourceTree = "<group>"; };
+		283F9D6727B8BAC5009DFA63 /* RequestTransactionFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionFixtures.swift; sourceTree = "<group>"; };
+		283F9D6927B8BEE1009DFA63 /* RequestTransactionViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionViewSpy.swift; sourceTree = "<group>"; };
 		4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendBinaryCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87339F56C19180A5E1FAA9D3 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E15E0D2AF54D46A0EAF6015 /* Pods-SendBinaryCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6412E4B72265ADFB1DD3FE1 /* Pods-SendBinaryCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoin.release.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoin/Pods-SendBinaryCoin.release.xcconfig"; sourceTree = "<group>"; };
 		B2C08D253BC38FB56FE5D4DD /* Pods_SendBinaryCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendBinaryCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED3EBB6A2F8B92D1227E8E /* Pods-SendBinaryCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoinTests.release.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests.release.xcconfig"; sourceTree = "<group>"; };
-		F7D2EA231AFEBBB61125C9DF /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendBinaryCoin_SendBinaryCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +118,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2808D35B27B846E6000DF9F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A47FAF99BA467C675335533F /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,7 +126,6 @@
 			children = (
 				2808D34027B846E2000DF9F3 /* SendBinaryCoin */,
 				2808D35727B846E6000DF9F3 /* SendBinaryCoinTests */,
-				2808D36127B846E6000DF9F3 /* SendBinaryCoinUITests */,
 				2808D33F27B846E2000DF9F3 /* Products */,
 				DE3350D427986437E7D0F976 /* Pods */,
 				E417CB273B0A0D15397E0487 /* Frameworks */,
@@ -132,7 +137,6 @@
 			children = (
 				2808D33E27B846E2000DF9F3 /* SendBinaryCoin.app */,
 				2808D35427B846E6000DF9F3 /* SendBinaryCoinTests.xctest */,
-				2808D35E27B846E6000DF9F3 /* SendBinaryCoinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,16 +156,9 @@
 		2808D35727B846E6000DF9F3 /* SendBinaryCoinTests */ = {
 			isa = PBXGroup;
 			children = (
+				283F9D4C27B8AF3C009DFA63 /* Sources */,
 			);
 			path = SendBinaryCoinTests;
-			sourceTree = "<group>";
-		};
-		2808D36127B846E6000DF9F3 /* SendBinaryCoinUITests */ = {
-			isa = PBXGroup;
-			children = (
-				283F9D4727B8AC26009DFA63 /* Snapshot */,
-			);
-			path = SendBinaryCoinUITests;
 			sourceTree = "<group>";
 		};
 		2808D37127B84BD4000DF9F3 /* Resources */ = {
@@ -265,15 +262,44 @@
 			children = (
 				2808D3A227B85EB1000DF9F3 /* String.swift */,
 				2808D3A427B8654C000DF9F3 /* UIStackView.swift */,
+				283F9D5D27B8B3A1009DFA63 /* Mirror.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		283F9D4727B8AC26009DFA63 /* Snapshot */ = {
+		283F9D4C27B8AF3C009DFA63 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				283F9D4D27B8AF49009DFA63 /* Features */,
 			);
-			path = Snapshot;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		283F9D4D27B8AF49009DFA63 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				283F9D5A27B8B16D009DFA63 /* Double */,
+				283F9D4E27B8AF76009DFA63 /* RequestTransactionViewControllerTests.swift */,
+				283F9D4F27B8AF76009DFA63 /* RequestTransactionInteractorTests.swift */,
+				283F9D5027B8AF76009DFA63 /* RequestTransactionRouterTests.swift */,
+				283F9D5127B8AF76009DFA63 /* RequestTransactionPresenterTests.swift */,
+				283F9D5227B8AF76009DFA63 /* RequestTransactionConfiguratorTests.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		283F9D5A27B8B16D009DFA63 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				283F9D5B27B8B1C1009DFA63 /* RequestTransactionPresenterInputSpy.swift */,
+				283F9D6127B8B494009DFA63 /* RequestTransactionPresenterOutputProtocolSpy.swift */,
+				283F9D6327B8B4A4009DFA63 /* RequestTransactionInteractorInputProtocolSpy.swift */,
+				283F9D5F27B8B47B009DFA63 /* RequestTransactionRouterProtocolSpy.swift */,
+				283F9D6527B8B5B5009DFA63 /* RequestTransactionInteractorOutputProtocolSpy.swift */,
+				283F9D6727B8BAC5009DFA63 /* RequestTransactionFixtures.swift */,
+				283F9D6927B8BEE1009DFA63 /* RequestTransactionViewSpy.swift */,
+			);
+			path = Double;
 			sourceTree = "<group>";
 		};
 		DE3350D427986437E7D0F976 /* Pods */ = {
@@ -281,8 +307,6 @@
 			children = (
 				255BBD6271C3A0F6ECD88932 /* Pods-SendBinaryCoin.debug.xcconfig */,
 				A6412E4B72265ADFB1DD3FE1 /* Pods-SendBinaryCoin.release.xcconfig */,
-				1C38CCA2D40B207E971FED09 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig */,
-				87339F56C19180A5E1FAA9D3 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */,
 				8E15E0D2AF54D46A0EAF6015 /* Pods-SendBinaryCoinTests.debug.xcconfig */,
 				C6ED3EBB6A2F8B92D1227E8E /* Pods-SendBinaryCoinTests.release.xcconfig */,
 			);
@@ -293,7 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */,
-				F7D2EA231AFEBBB61125C9DF /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */,
 				B2C08D253BC38FB56FE5D4DD /* Pods_SendBinaryCoinTests.framework */,
 			);
 			name = Frameworks;
@@ -328,6 +351,7 @@
 				2808D35027B846E6000DF9F3 /* Sources */,
 				2808D35127B846E6000DF9F3 /* Frameworks */,
 				2808D35227B846E6000DF9F3 /* Resources */,
+				8454A11CEC5D507E9E1CBABA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,26 +362,6 @@
 			productName = SendBinaryCoinTests;
 			productReference = 2808D35427B846E6000DF9F3 /* SendBinaryCoinTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2808D35D27B846E6000DF9F3 /* SendBinaryCoinUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2808D36E27B846E6000DF9F3 /* Build configuration list for PBXNativeTarget "SendBinaryCoinUITests" */;
-			buildPhases = (
-				008B28E12DCA3BEF556AF2C6 /* [CP] Check Pods Manifest.lock */,
-				2808D35A27B846E6000DF9F3 /* Sources */,
-				2808D35B27B846E6000DF9F3 /* Frameworks */,
-				2808D35C27B846E6000DF9F3 /* Resources */,
-				2EDEA6E555872C49993E1B8D /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2808D36027B846E6000DF9F3 /* PBXTargetDependency */,
-			);
-			name = SendBinaryCoinUITests;
-			productName = SendBinaryCoinUITests;
-			productReference = 2808D35E27B846E6000DF9F3 /* SendBinaryCoinUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -373,10 +377,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					2808D35327B846E6000DF9F3 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 2808D33D27B846E2000DF9F3;
-					};
-					2808D35D27B846E6000DF9F3 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 2808D33D27B846E2000DF9F3;
 					};
@@ -397,7 +397,6 @@
 			targets = (
 				2808D33D27B846E2000DF9F3 /* SendBinaryCoin */,
 				2808D35327B846E6000DF9F3 /* SendBinaryCoinTests */,
-				2808D35D27B846E6000DF9F3 /* SendBinaryCoinUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -419,55 +418,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2808D35C27B846E6000DF9F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		008B28E12DCA3BEF556AF2C6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SendBinaryCoin-SendBinaryCoinUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2EDEA6E555872C49993E1B8D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5771E815D2A95EE197EE1B55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +465,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8454A11CEC5D507E9E1CBABA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -525,6 +495,7 @@
 				2808D3A927B872F8000DF9F3 /* RateRequest.swift in Sources */,
 				2808D38827B84CD8000DF9F3 /* RequestTransactionProtocols.swift in Sources */,
 				2808D39327B84D8B000DF9F3 /* ExchangeCoin.swift in Sources */,
+				283F9D5E27B8B3A1009DFA63 /* Mirror.swift in Sources */,
 				2808D38927B84CD8000DF9F3 /* RequestTransactionPresenter.swift in Sources */,
 				2808D34227B846E2000DF9F3 /* AppDelegate.swift in Sources */,
 				2808D39127B84D74000DF9F3 /* Network.swift in Sources */,
@@ -545,13 +516,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2808D35A27B846E6000DF9F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				283F9D5C27B8B1C1009DFA63 /* RequestTransactionPresenterInputSpy.swift in Sources */,
+				283F9D5527B8AF76009DFA63 /* RequestTransactionRouterTests.swift in Sources */,
+				283F9D5427B8AF76009DFA63 /* RequestTransactionInteractorTests.swift in Sources */,
+				283F9D6227B8B494009DFA63 /* RequestTransactionPresenterOutputProtocolSpy.swift in Sources */,
+				283F9D5727B8AF76009DFA63 /* RequestTransactionConfiguratorTests.swift in Sources */,
+				283F9D6427B8B4A5009DFA63 /* RequestTransactionInteractorInputProtocolSpy.swift in Sources */,
+				283F9D6027B8B47B009DFA63 /* RequestTransactionRouterProtocolSpy.swift in Sources */,
+				283F9D6627B8B5B5009DFA63 /* RequestTransactionInteractorOutputProtocolSpy.swift in Sources */,
+				283F9D5627B8AF76009DFA63 /* RequestTransactionPresenterTests.swift in Sources */,
+				283F9D6827B8BAC5009DFA63 /* RequestTransactionFixtures.swift in Sources */,
+				283F9D5327B8AF76009DFA63 /* RequestTransactionViewControllerTests.swift in Sources */,
+				283F9D6A27B8BEE2009DFA63 /* RequestTransactionViewSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,11 +538,6 @@
 			isa = PBXTargetDependency;
 			target = 2808D33D27B846E2000DF9F3 /* SendBinaryCoin */;
 			targetProxy = 2808D35527B846E6000DF9F3 /* PBXContainerItemProxy */;
-		};
-		2808D36027B846E6000DF9F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2808D33D27B846E2000DF9F3 /* SendBinaryCoin */;
-			targetProxy = 2808D35F27B846E6000DF9F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -806,54 +777,6 @@
 			};
 			name = Release;
 		};
-		2808D36F27B846E6000DF9F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C38CCA2D40B207E971FED09 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9S5XFV9RZQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = FNA.SendBinaryCoinUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SendBinaryCoin;
-			};
-			name = Debug;
-		};
-		2808D37027B846E6000DF9F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87339F56C19180A5E1FAA9D3 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9S5XFV9RZQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = FNA.SendBinaryCoinUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SendBinaryCoin;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -880,15 +803,6 @@
 			buildConfigurations = (
 				2808D36C27B846E6000DF9F3 /* Debug */,
 				2808D36D27B846E6000DF9F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2808D36E27B846E6000DF9F3 /* Build configuration list for PBXNativeTarget "SendBinaryCoinUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2808D36F27B846E6000DF9F3 /* Debug */,
-				2808D37027B846E6000DF9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

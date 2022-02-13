@@ -15,10 +15,6 @@ final class RequestTransactionPresenter {
     private let router: RequestTransactionRouterProtocol
     private let interactor: RequestTransactionInteractorInputProtocol
     
-    // MARK: - Internal Properties
-
-    // MARK: - Private Properties
-    
     // MARK: - Inits
     
     init(router: RequestTransactionRouterProtocol,
@@ -26,13 +22,10 @@ final class RequestTransactionPresenter {
         self.router = router
         self.interactor = interactor
     }
-    
-    // MARK: - Internal Methods
-    
-    // MARK: - Private Methods    
 }
 
 // MARK: - Input Protocol
+
 extension RequestTransactionPresenter: RequestTransactionPresenterInputProtocol {
     func didSelect(country: Country) {
         interactor.findExchangeRate(for: country)
@@ -46,18 +39,19 @@ extension RequestTransactionPresenter: RequestTransactionPresenterInputProtocol 
         interactor.shouldValidate(phone: phone)
     }
 
+    func viewDidLoad() {
+        viewController?.set(title: RequestTransactionViewStrings.navigationTitle)
+        interactor.fetchData()
+    }
+
     func viewDidAppear() {
         trackScreenView()
     }
 }
 
 // MARK: - Output Protocol
-extension RequestTransactionPresenter: RequestTransactionInteractorOutputProtocol {
-    func viewDidLoad() {
-        viewController?.set(title: RequestTransactionViewStrings.navigationTitle)
-        interactor.fetchData()
-    }
 
+extension RequestTransactionPresenter: RequestTransactionInteractorOutputProtocol {
     func fetchDataSuccess(viewData: RequestTransactionViewData) {
         viewController?.set(data: viewData)
     }
@@ -76,6 +70,7 @@ extension RequestTransactionPresenter: RequestTransactionInteractorOutputProtoco
 }
 
 // MARK: - Analytics
+
 extension RequestTransactionPresenter {
     func trackScreenView() {
     }

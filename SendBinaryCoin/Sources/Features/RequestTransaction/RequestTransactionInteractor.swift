@@ -20,7 +20,7 @@ final class RequestTransactionInteractor {
     private lazy var network = Network()
     private lazy var countries = CountryDataSource.generateData()
 
-    private var rates: RateResponse?
+    var rates: RateResponse?
 
     private var countrySelected: Country?
     private var exchangeRateSelected: Float?
@@ -91,7 +91,7 @@ extension RequestTransactionInteractor: RequestTransactionInteractorInputProtoco
             output?.didValidatePhone(isValid: false)
             return
         }
-        
+
         let isValid = phone.hasPrefix(countryPrefix) && phone.count ==  countryPhoneNumbers + countryPrefix.count
         output?.didValidatePhone(isValid: isValid)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023E63EE0064332F88BA9A411DCF1D4A /* Pods-SendBinaryCoinTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5DC7A3A4E836D2DE3BC05F5A375E788 /* Pods-SendBinaryCoinTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02EEAFC471B5BFF3DA9CA724B77ADAD2 /* SpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766D6AE392BC265F51ECF13BFE61629 /* SpriteKit.swift */; };
 		07BCE427364C14A3924FA6E5821BDFE9 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DAC91A78ED55C471223475389423AA /* CALayer.swift */; };
 		0CA33262BEBA6D7236BAC24028199D0E /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF6EDFFC08350942A5050950E4DE36 /* CaseIterable.swift */; };
@@ -17,27 +18,24 @@
 		2617BFC93AAED6FFAC6C298D2F4D97AE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6A51818BA6CA3B13E292DBF9F11C3 /* UIViewController.swift */; };
 		2D0C0DD04AA4F9C170A4FBF0D3FD9626 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D87AA89A2C837565E2561B45696AF9 /* Wait.swift */; };
 		2DF2678C2AACDF82CB67532E7737AFA6 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3128AD5940971C67FFF1AC1F395EE /* Diff.swift */; };
-		3D2B3684F8D0CA0FEAF9B5B6EA7FE351 /* Pods-SendBinaryCoinTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 279A57122397552764B043865EDE7649 /* Pods-SendBinaryCoinTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40AAD537046D8467746A0306A7D7DF94 /* SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0954A14DA6DE1DBD6097F37A068036 /* SceneKit.swift */; };
 		41C82F2B3F9E027CC6EF7B151288682F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */; };
 		45B49E668D4E0DF1D905F71246A30121 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF6C2F62324C6A5922DB5320EEE63E /* Async.swift */; };
 		49000C447B47E5325D4834B372055727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
+		4AB152E4CEE6449A7781AFBB55C8E0F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		51D28EADB4924A8096EDCEFC3D74CAB8 /* Snapshotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924EFDA8CBEA7B9140C1F59A5802336 /* Snapshotting.swift */; };
 		56CD2FF07A0AFE121A7512FB49FCEDE7 /* Diffing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4932E63DAEB56C513BFAB709705310 /* Diffing.swift */; };
 		59B265CDC0345DA9D541A2D6A1A81361 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21306481619842D76719B2F9F866149 /* Any.swift */; };
-		6279A6C533BAF840E779D5CECDD1A06D /* Pods-SendBinaryCoin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F3BACA30B8344DDFF4C77FAB41CBE8 /* Pods-SendBinaryCoin-dummy.m */; };
+		6279A6C533BAF840E779D5CECDD1A06D /* Pods-SendBinaryCoin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1F1DB34D72ECD61D96A93A400415D5 /* Pods-SendBinaryCoin-dummy.m */; };
 		62C4188A8DB5CA43231DE8D64E72BD1D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07B420AD324139ECE152B1082B5ADF /* View.swift */; };
 		6A5C798F3DC6B29E72E741AC83C7203D /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827D8F0DE21BCEF63AE5D27B5989C84 /* URLRequest.swift */; };
 		6AFC185192FD16011F63776037110EED /* SnapshotTesting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE19F6CE4B1B6B07F54D11EE87C7D73 /* SnapshotTesting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7055892EEAF0BECECD7978A2F5888E36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		74463B44B8B2D754F999098ED76E55ED /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5168A1566AEEAA1A2183C7D120DF932 /* Description.swift */; };
 		7A910B1EE5D070CB301AC51C2E035C91 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A7BE1E2462024C73A26C9FC81FAD75 /* NSImage.swift */; };
-		7E631345AAE2AD98FA0CB6096C8B08A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		7F496FC075C99F8B35BB6A2B2991BE4A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929667A3AD8B22C546CDF45D418B5B4E /* Data.swift */; };
 		8A01A0DEFA212DCAA14250DF50293363 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DD6B5A003CAEB8D9CF244A2082260A /* NSView.swift */; };
 		952DF5160B7A5F339C603FCFBC7BA3ED /* AssertInlineSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3B6B51FD9110C7F68F085F76F0F /* AssertInlineSnapshot.swift */; };
 		9E0237BBCDF5E22C8C70CA299BA989B3 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82204F4043BCB70919CCBFB37EBFD513 /* AssertSnapshot.swift */; };
-		A0D904464270FDAC851159C676526D2F /* Pods-SendBinaryCoinTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C6955E823A200FBD23C09CA790DCB7 /* Pods-SendBinaryCoinTests-dummy.m */; };
 		A7911111D9E22FFCEB046C48BD26CD03 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6980088ED99777D6F4DDCF1E7335364C /* String.swift */; };
 		AA8458701AD53DA38ECC607024FD4286 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D53B2DA2B1268D1EAB0640B580723 /* Codable.swift */; };
 		B1B3C3B19CBD78FB949FDAB120FAFA81 /* String+SpecialCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B66D7AD9F299A37267476B9E9BF6A7 /* String+SpecialCharacters.swift */; };
@@ -47,23 +45,22 @@
 		C3C12900EE0A69AA5442DB26DD0DDE72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		C5B200336D2113D3C9081DF38FA71EFD /* NSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48C92655E70F43C08558CC1C375D8A /* NSBezierPath.swift */; };
 		C903A253A697DCF3ABA3EE46B5DCD105 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E195443D4761DDFB56BD4233B859C78 /* Internal.swift */; };
-		CA32244228C76627AEA370A40BFF2A07 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E0C507EB02D8CAC97E5C1C4A03625D /* Pods-SendBinaryCoin-SendBinaryCoinUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5CF78CD0117EBB47C0F4CF5B69F021A /* XCTAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DDDF7ACDC8DD63A6BAB8F998A9EFA /* XCTAttachment.swift */; };
-		D635C88DBD3DA61B32E3861D76CB99C1 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BA0349D1C007116C9C946C1CBFA175 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-dummy.m */; };
 		D858C353CC2F564E42446D4E6E360668 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE030DCBDE4AFDC4A809F00BF5A2E6E /* SwiftUIView.swift */; };
-		D8FDEDE728CDAFEAC2705FA65DE21140 /* Pods-SendBinaryCoin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 685C724EE394775FE7D994887FA4E2E3 /* Pods-SendBinaryCoin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8FDEDE728CDAFEAC2705FA65DE21140 /* Pods-SendBinaryCoin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6AF4BEA7747A59C9685C0A7CDF9E958 /* Pods-SendBinaryCoin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A7A8A14496AA7C4D97AA83CDEE283A /* Pods-SendBinaryCoinTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A843632B7B2A234B645E338ACD84E9 /* Pods-SendBinaryCoinTests-dummy.m */; };
 		F58CC71DED68C325B5EF5EAC30C8070F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD8B5A212989CF0422DD48B8E1A243 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B129B77697345C57FCF702BB61B1526 /* PBXContainerItemProxy */ = {
+		42A2E21A21E71015A61DC322ECA5E166 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 18A79350E730D17C4CF567FE8E032557;
 			remoteInfo = "Pods-SendBinaryCoin";
 		};
-		EB1E2A340C6DD2B3B77DFABFB08190BE /* PBXContainerItemProxy */ = {
+		45601148D6D50CCA98FB90608031F71B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -75,92 +72,83 @@
 /* Begin PBXFileReference section */
 		03D90354AE9216DE72DDA401A307AB58 /* SnapshotTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-prefix.pch"; sourceTree = "<group>"; };
 		04BD8B5A212989CF0422DD48B8E1A243 /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/SnapshotTesting/Snapshotting/UIImage.swift; sourceTree = "<group>"; };
-		0BA100617ACC04C3000E23BB35EBC5AB /* Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F02B7C20008EF3BA225369E7015C9A9 /* Pods-SendBinaryCoinTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendBinaryCoinTests-frameworks.sh"; sourceTree = "<group>"; };
 		1333F8000D821D4E948FF1E4559ED646 /* SnapshotTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapshotTesting-dummy.m"; sourceTree = "<group>"; };
 		13B8EEA8D39817AB9022E764B15E332D /* Pods_SendBinaryCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendBinaryCoin.framework; path = "Pods-SendBinaryCoin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BF6EDFFC08350942A5050950E4DE36 /* CaseIterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseIterable.swift; path = Sources/SnapshotTesting/Snapshotting/CaseIterable.swift; sourceTree = "<group>"; };
-		1820B5B3D6CF713179159EEF3A9EBEF2 /* Pods-SendBinaryCoin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoin-Info.plist"; sourceTree = "<group>"; };
 		1CE19F6CE4B1B6B07F54D11EE87C7D73 /* SnapshotTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-umbrella.h"; sourceTree = "<group>"; };
-		1F079FBAE156B2A0B8ADEB8A2C9D918D /* Pods-SendBinaryCoinTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoinTests-Info.plist"; sourceTree = "<group>"; };
-		279A57122397552764B043865EDE7649 /* Pods-SendBinaryCoinTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendBinaryCoinTests-umbrella.h"; sourceTree = "<group>"; };
-		2932AC224AB413C107F040E6612C5487 /* Pods-SendBinaryCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
-		338BE14E3BCF2E6B58119157CDA46848 /* Pods-SendBinaryCoin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendBinaryCoin.modulemap"; sourceTree = "<group>"; };
-		34BA0349D1C007116C9C946C1CBFA175 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests-dummy.m"; sourceTree = "<group>"; };
-		37D5C6F68FD15BE2255E51BDF8EDB0AF /* Pods-SendBinaryCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoin.debug.xcconfig"; sourceTree = "<group>"; };
-		38E7D9EA086AE7F2D3DCCBAED6864E55 /* Pods-SendBinaryCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoin.release.xcconfig"; sourceTree = "<group>"; };
+		20B65E7B8E29206C3F50F14C3010E077 /* Pods-SendBinaryCoinTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoinTests-Info.plist"; sourceTree = "<group>"; };
+		24658545478346D6385EEE685135184B /* Pods-SendBinaryCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoin.release.xcconfig"; sourceTree = "<group>"; };
+		25ECED86E60E82C5284E82D2D44F31C8 /* Pods-SendBinaryCoinTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoinTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AF8DD8CC2AEA5CB1947F18FF13D7F46 /* Pods-SendBinaryCoinTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendBinaryCoinTests.modulemap"; sourceTree = "<group>"; };
+		2E5B452B3E1767D0BF51934B1257BAAF /* Pods-SendBinaryCoinTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendBinaryCoinTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36A843632B7B2A234B645E338ACD84E9 /* Pods-SendBinaryCoinTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendBinaryCoinTests-dummy.m"; sourceTree = "<group>"; };
 		390C80E503AD272DBAFA73264A84A110 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestCase.swift; path = Sources/SnapshotTesting/SnapshotTestCase.swift; sourceTree = "<group>"; };
-		406AFF12448116EAEBFD2EF9DD5A6E9B /* Pods-SendBinaryCoin-SendBinaryCoinUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		485B507C31AE640F7CB9C91C0773EEB3 /* SnapshotTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapshotTesting.modulemap; sourceTree = "<group>"; };
 		49A4C3B6B51FD9110C7F68F085F76F0F /* AssertInlineSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertInlineSnapshot.swift; path = Sources/SnapshotTesting/AssertInlineSnapshot.swift; sourceTree = "<group>"; };
-		4BEC7DFE3BCD3A6B83D6FAC93614F077 /* Pods-SendBinaryCoinTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendBinaryCoinTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4CDF6C2F62324C6A5922DB5320EEE63E /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/SnapshotTesting/Async.swift; sourceTree = "<group>"; };
 		4D477DE11F8FBC1024F11638FDC71303 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Sources/SnapshotTesting/Snapshotting/UIView.swift; sourceTree = "<group>"; };
-		50CBC1C106BC4BFFF0DCA4B2B10D2C2F /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5103E0C952B494640827D509CFB3E14F /* Pods-SendBinaryCoin-SendBinaryCoinUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests-Info.plist"; sourceTree = "<group>"; };
-		52F3BACA30B8344DDFF4C77FAB41CBE8 /* Pods-SendBinaryCoin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendBinaryCoin-dummy.m"; sourceTree = "<group>"; };
 		52FB576D06DF6052AAB1F3D649CF769A /* PlistEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistEncoder.swift; path = Sources/SnapshotTesting/Common/PlistEncoder.swift; sourceTree = "<group>"; };
 		5766D6AE392BC265F51ECF13BFE61629 /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
 		5924EFDA8CBEA7B9140C1F59A5802336 /* Snapshotting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshotting.swift; path = Sources/SnapshotTesting/Snapshotting.swift; sourceTree = "<group>"; };
 		5B336763B4C58CDCE77C7279B27695CB /* SnapshotTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.debug.xcconfig; sourceTree = "<group>"; };
 		5B4932E63DAEB56C513BFAB709705310 /* Diffing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffing.swift; path = Sources/SnapshotTesting/Diffing.swift; sourceTree = "<group>"; };
 		5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5F02131E5659D0887BD96F4CD17CCD87 /* Pods-SendBinaryCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		6588D2AA3617526365D99F4484E13E2E /* NSViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSViewController.swift; path = Sources/SnapshotTesting/Snapshotting/NSViewController.swift; sourceTree = "<group>"; };
-		685C724EE394775FE7D994887FA4E2E3 /* Pods-SendBinaryCoin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendBinaryCoin-umbrella.h"; sourceTree = "<group>"; };
 		6980088ED99777D6F4DDCF1E7335364C /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
 		69A7BE1E2462024C73A26C9FC81FAD75 /* NSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImage.swift; path = Sources/SnapshotTesting/Snapshotting/NSImage.swift; sourceTree = "<group>"; };
+		6A06E3A57D1A6F89051B0FA40336EDE7 /* Pods-SendBinaryCoin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendBinaryCoin-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6DE030DCBDE4AFDC4A809F00BF5A2E6E /* SwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = Sources/SnapshotTesting/Snapshotting/SwiftUIView.swift; sourceTree = "<group>"; };
-		746AB7938691E53F26E7D35531368A04 /* Pods-SendBinaryCoinTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoinTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		79A3128AD5940971C67FFF1AC1F395EE /* Diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diff.swift; path = Sources/SnapshotTesting/Diff.swift; sourceTree = "<group>"; };
 		7A48C92655E70F43C08558CC1C375D8A /* NSBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/NSBezierPath.swift; sourceTree = "<group>"; };
 		7E195443D4761DDFB56BD4233B859C78 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SnapshotTesting/Common/Internal.swift; sourceTree = "<group>"; };
 		81DD6B5A003CAEB8D9CF244A2082260A /* NSView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSView.swift; path = Sources/SnapshotTesting/Snapshotting/NSView.swift; sourceTree = "<group>"; };
 		82204F4043BCB70919CCBFB37EBFD513 /* AssertSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertSnapshot.swift; path = Sources/SnapshotTesting/AssertSnapshot.swift; sourceTree = "<group>"; };
 		840DD42E2AD320557E2C07B6369702D6 /* SnapshotTesting-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotTesting-Info.plist"; sourceTree = "<group>"; };
+		8C942E1A684B179714AD18CD2883FB5A /* Pods-SendBinaryCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		929667A3AD8B22C546CDF45D418B5B4E /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/SnapshotTesting/Snapshotting/Data.swift; sourceTree = "<group>"; };
 		96D84CE76B4D9A996FE664A18DF46D76 /* CGPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPath.swift; path = Sources/SnapshotTesting/Snapshotting/CGPath.swift; sourceTree = "<group>"; };
+		983BDA6AEE293E242D482EDBE2A2CDFF /* Pods-SendBinaryCoin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendBinaryCoin.modulemap"; sourceTree = "<group>"; };
 		9907A612DD874F0B8314A6122DBF9369 /* UIBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/UIBezierPath.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F182D2F618B1D9AEE6049C743ED9DEB /* Pods-SendBinaryCoin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoin-Info.plist"; sourceTree = "<group>"; };
 		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapshotTesting.framework; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DAC91A78ED55C471223475389423AA /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = Sources/SnapshotTesting/Snapshotting/CALayer.swift; sourceTree = "<group>"; };
 		A827D8F0DE21BCEF63AE5D27B5989C84 /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
-		A8D7C1D34BDFD3C4F6A72E3823A89E8F /* Pods-SendBinaryCoin-SendBinaryCoinUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests.modulemap"; sourceTree = "<group>"; };
-		AAC7AAC6FA3996BB00E3A3E39B42A832 /* Pods-SendBinaryCoinTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendBinaryCoinTests.modulemap"; sourceTree = "<group>"; };
-		B272950B007F7D8701BBD07FD332C5E4 /* Pods-SendBinaryCoin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendBinaryCoin-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BCFDE318D7CF30C6D1C5DD36A0DEADAB /* Pods-SendBinaryCoin-SendBinaryCoinUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C5DC7A3A4E836D2DE3BC05F5A375E788 /* Pods-SendBinaryCoinTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendBinaryCoinTests-umbrella.h"; sourceTree = "<group>"; };
 		CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDC0F27C4B97C7033ACE74E4F15ED74E /* Pods-SendBinaryCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA95F360AE82B9938F52047DA457BD28 /* Pods-SendBinaryCoin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoin-acknowledgements.plist"; sourceTree = "<group>"; };
 		CF07B420AD324139ECE152B1082B5ADF /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/SnapshotTesting/Common/View.swift; sourceTree = "<group>"; };
 		D3B66D7AD9F299A37267476B9E9BF6A7 /* String+SpecialCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SpecialCharacters.swift"; path = "Sources/SnapshotTesting/Common/String+SpecialCharacters.swift"; sourceTree = "<group>"; };
 		D5168A1566AEEAA1A2183C7D120DF932 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = Sources/SnapshotTesting/Snapshotting/Description.swift; sourceTree = "<group>"; };
-		D51D1CB588425F97376F548EFC5F0031 /* Pods-SendBinaryCoin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendBinaryCoin-acknowledgements.plist"; sourceTree = "<group>"; };
-		D9C6955E823A200FBD23C09CA790DCB7 /* Pods-SendBinaryCoinTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendBinaryCoinTests-dummy.m"; sourceTree = "<group>"; };
 		DB0954A14DA6DE1DBD6097F37A068036 /* SceneKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneKit.swift; path = Sources/SnapshotTesting/Snapshotting/SceneKit.swift; sourceTree = "<group>"; };
 		E21306481619842D76719B2F9F866149 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/SnapshotTesting/Snapshotting/Any.swift; sourceTree = "<group>"; };
 		E494997A1744E3B15327506F641DF7A2 /* SnapshotTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.release.xcconfig; sourceTree = "<group>"; };
-		E66C096B9F7DFD16674A523D627E0A44 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E52E05EDFF4ED785FCB88523B17F134C /* Pods-SendBinaryCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendBinaryCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6AF4BEA7747A59C9685C0A7CDF9E958 /* Pods-SendBinaryCoin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendBinaryCoin-umbrella.h"; sourceTree = "<group>"; };
 		ECA6A51818BA6CA3B13E292DBF9F11C3 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/SnapshotTesting/Snapshotting/UIViewController.swift; sourceTree = "<group>"; };
 		EF1F638982974F852D93D74275CD89F4 /* Pods_SendBinaryCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendBinaryCoinTests.framework; path = "Pods-SendBinaryCoinTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D87AA89A2C837565E2561B45696AF9 /* Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = Sources/SnapshotTesting/Extensions/Wait.swift; sourceTree = "<group>"; };
-		F11065F1CF41D7148724C2BFD609572E /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendBinaryCoin_SendBinaryCoinUITests.framework; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14D53B2DA2B1268D1EAB0640B580723 /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = Sources/SnapshotTesting/Snapshotting/Codable.swift; sourceTree = "<group>"; };
-		F8E0C507EB02D8CAC97E5C1C4A03625D /* Pods-SendBinaryCoin-SendBinaryCoinUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendBinaryCoin-SendBinaryCoinUITests-umbrella.h"; sourceTree = "<group>"; };
+		FE1F1DB34D72ECD61D96A93A400415D5 /* Pods-SendBinaryCoin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendBinaryCoin-dummy.m"; sourceTree = "<group>"; };
 		FF9DDDF7ACDC8DD63A6BAB8F998A9EFA /* XCTAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTAttachment.swift; path = Sources/SnapshotTesting/Common/XCTAttachment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0000B35D57859D32777591D7770D808D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7055892EEAF0BECECD7978A2F5888E36 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4F12D75EF11B92F3D294078D4A3DE87F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				49000C447B47E5325D4834B372055727 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C521DD1D24FE9F93DA2358FE8282903B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AB152E4CEE6449A7781AFBB55C8E0F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,34 +161,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F77C25E06D1BFB259661132821C5D03F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E631345AAE2AD98FA0CB6096C8B08A5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C5CAA0549156F8BAEA4B4B5C7FB7C1E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13B8EEA8D39817AB9022E764B15E332D /* Pods_SendBinaryCoin.framework */,
-				F11065F1CF41D7148724C2BFD609572E /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */,
-				EF1F638982974F852D93D74275CD89F4 /* Pods_SendBinaryCoinTests.framework */,
-				A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				974814B39C0012DECD183BBB91B32103 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AF8D419EE8AC2B782B8868CBD21CD32 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5F3E1A275DF55BB6730718E85F853C0 /* Pods-SendBinaryCoin */,
+				E4BA6C11EA1CEC6624E61483EA2F5C52 /* Pods-SendBinaryCoinTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B59D6C20573EBE69F866AD70B6F41FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B8EEA8D39817AB9022E764B15E332D /* Pods_SendBinaryCoin.framework */,
+				EF1F638982974F852D93D74275CD89F4 /* Pods_SendBinaryCoinTests.framework */,
+				A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		435A9A00AD11610052A996F7A43813E3 /* SnapshotTesting */ = {
@@ -268,33 +256,6 @@
 			path = "../Target Support Files/SnapshotTesting";
 			sourceTree = "<group>";
 		};
-		89C1827123BAB450124FCDA7C13884D2 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5ACE44BB1D9410476C2CE2059733E6D /* Pods-SendBinaryCoin */,
-				900087937DB4753034A10C60FC85CC35 /* Pods-SendBinaryCoin-SendBinaryCoinUITests */,
-				D8BC14F02A1993E59231B101D301BBF8 /* Pods-SendBinaryCoinTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		900087937DB4753034A10C60FC85CC35 /* Pods-SendBinaryCoin-SendBinaryCoinUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A8D7C1D34BDFD3C4F6A72E3823A89E8F /* Pods-SendBinaryCoin-SendBinaryCoinUITests.modulemap */,
-				E66C096B9F7DFD16674A523D627E0A44 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-acknowledgements.markdown */,
-				406AFF12448116EAEBFD2EF9DD5A6E9B /* Pods-SendBinaryCoin-SendBinaryCoinUITests-acknowledgements.plist */,
-				34BA0349D1C007116C9C946C1CBFA175 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-dummy.m */,
-				BCFDE318D7CF30C6D1C5DD36A0DEADAB /* Pods-SendBinaryCoin-SendBinaryCoinUITests-frameworks.sh */,
-				5103E0C952B494640827D509CFB3E14F /* Pods-SendBinaryCoin-SendBinaryCoinUITests-Info.plist */,
-				F8E0C507EB02D8CAC97E5C1C4A03625D /* Pods-SendBinaryCoin-SendBinaryCoinUITests-umbrella.h */,
-				0BA100617ACC04C3000E23BB35EBC5AB /* Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig */,
-				50CBC1C106BC4BFFF0DCA4B2B10D2C2F /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */,
-			);
-			name = "Pods-SendBinaryCoin-SendBinaryCoinUITests";
-			path = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests";
-			sourceTree = "<group>";
-		};
 		974814B39C0012DECD183BBB91B32103 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,47 +265,48 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C5ACE44BB1D9410476C2CE2059733E6D /* Pods-SendBinaryCoin */ = {
-			isa = PBXGroup;
-			children = (
-				338BE14E3BCF2E6B58119157CDA46848 /* Pods-SendBinaryCoin.modulemap */,
-				B272950B007F7D8701BBD07FD332C5E4 /* Pods-SendBinaryCoin-acknowledgements.markdown */,
-				D51D1CB588425F97376F548EFC5F0031 /* Pods-SendBinaryCoin-acknowledgements.plist */,
-				52F3BACA30B8344DDFF4C77FAB41CBE8 /* Pods-SendBinaryCoin-dummy.m */,
-				1820B5B3D6CF713179159EEF3A9EBEF2 /* Pods-SendBinaryCoin-Info.plist */,
-				685C724EE394775FE7D994887FA4E2E3 /* Pods-SendBinaryCoin-umbrella.h */,
-				37D5C6F68FD15BE2255E51BDF8EDB0AF /* Pods-SendBinaryCoin.debug.xcconfig */,
-				38E7D9EA086AE7F2D3DCCBAED6864E55 /* Pods-SendBinaryCoin.release.xcconfig */,
-			);
-			name = "Pods-SendBinaryCoin";
-			path = "Target Support Files/Pods-SendBinaryCoin";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				63DA5E36DAA901ED4907FA6B108CD654 /* Pods */,
-				0C5CAA0549156F8BAEA4B4B5C7FB7C1E /* Products */,
-				89C1827123BAB450124FCDA7C13884D2 /* Targets Support Files */,
+				3B59D6C20573EBE69F866AD70B6F41FD /* Products */,
+				3AF8D419EE8AC2B782B8868CBD21CD32 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D8BC14F02A1993E59231B101D301BBF8 /* Pods-SendBinaryCoinTests */ = {
+		E4BA6C11EA1CEC6624E61483EA2F5C52 /* Pods-SendBinaryCoinTests */ = {
 			isa = PBXGroup;
 			children = (
-				AAC7AAC6FA3996BB00E3A3E39B42A832 /* Pods-SendBinaryCoinTests.modulemap */,
-				4BEC7DFE3BCD3A6B83D6FAC93614F077 /* Pods-SendBinaryCoinTests-acknowledgements.markdown */,
-				746AB7938691E53F26E7D35531368A04 /* Pods-SendBinaryCoinTests-acknowledgements.plist */,
-				D9C6955E823A200FBD23C09CA790DCB7 /* Pods-SendBinaryCoinTests-dummy.m */,
-				1F079FBAE156B2A0B8ADEB8A2C9D918D /* Pods-SendBinaryCoinTests-Info.plist */,
-				279A57122397552764B043865EDE7649 /* Pods-SendBinaryCoinTests-umbrella.h */,
-				2932AC224AB413C107F040E6612C5487 /* Pods-SendBinaryCoinTests.debug.xcconfig */,
-				CDC0F27C4B97C7033ACE74E4F15ED74E /* Pods-SendBinaryCoinTests.release.xcconfig */,
+				2AF8DD8CC2AEA5CB1947F18FF13D7F46 /* Pods-SendBinaryCoinTests.modulemap */,
+				2E5B452B3E1767D0BF51934B1257BAAF /* Pods-SendBinaryCoinTests-acknowledgements.markdown */,
+				25ECED86E60E82C5284E82D2D44F31C8 /* Pods-SendBinaryCoinTests-acknowledgements.plist */,
+				36A843632B7B2A234B645E338ACD84E9 /* Pods-SendBinaryCoinTests-dummy.m */,
+				0F02B7C20008EF3BA225369E7015C9A9 /* Pods-SendBinaryCoinTests-frameworks.sh */,
+				20B65E7B8E29206C3F50F14C3010E077 /* Pods-SendBinaryCoinTests-Info.plist */,
+				C5DC7A3A4E836D2DE3BC05F5A375E788 /* Pods-SendBinaryCoinTests-umbrella.h */,
+				8C942E1A684B179714AD18CD2883FB5A /* Pods-SendBinaryCoinTests.debug.xcconfig */,
+				E52E05EDFF4ED785FCB88523B17F134C /* Pods-SendBinaryCoinTests.release.xcconfig */,
 			);
 			name = "Pods-SendBinaryCoinTests";
 			path = "Target Support Files/Pods-SendBinaryCoinTests";
+			sourceTree = "<group>";
+		};
+		F5F3E1A275DF55BB6730718E85F853C0 /* Pods-SendBinaryCoin */ = {
+			isa = PBXGroup;
+			children = (
+				983BDA6AEE293E242D482EDBE2A2CDFF /* Pods-SendBinaryCoin.modulemap */,
+				6A06E3A57D1A6F89051B0FA40336EDE7 /* Pods-SendBinaryCoin-acknowledgements.markdown */,
+				CA95F360AE82B9938F52047DA457BD28 /* Pods-SendBinaryCoin-acknowledgements.plist */,
+				FE1F1DB34D72ECD61D96A93A400415D5 /* Pods-SendBinaryCoin-dummy.m */,
+				9F182D2F618B1D9AEE6049C743ED9DEB /* Pods-SendBinaryCoin-Info.plist */,
+				E6AF4BEA7747A59C9685C0A7CDF9E958 /* Pods-SendBinaryCoin-umbrella.h */,
+				5F02131E5659D0887BD96F4CD17CCD87 /* Pods-SendBinaryCoin.debug.xcconfig */,
+				24658545478346D6385EEE685135184B /* Pods-SendBinaryCoin.release.xcconfig */,
+			);
+			name = "Pods-SendBinaryCoin";
+			path = "Target Support Files/Pods-SendBinaryCoin";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,14 +320,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A84563EA74BE57040A2501201A1C058 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D2B3684F8D0CA0FEAF9B5B6EA7FE351 /* Pods-SendBinaryCoinTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22F6AF500A0919E213FF718833356BD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,11 +328,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D87355F25EF548AA845830E8D0399B9B /* Headers */ = {
+		FA38EE27E14C079927FAF94516CF2EC5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA32244228C76627AEA370A40BFF2A07 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-umbrella.h in Headers */,
+				023E63EE0064332F88BA9A411DCF1D4A /* Pods-SendBinaryCoinTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,17 +341,18 @@
 /* Begin PBXNativeTarget section */
 		03985EDBFD75652CEF61EA50FB8155A6 /* Pods-SendBinaryCoinTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 652AEC68436367C78F771A7BA8581AFD /* Build configuration list for PBXNativeTarget "Pods-SendBinaryCoinTests" */;
+			buildConfigurationList = 735429A09C6FD5D4C82F56742E408621 /* Build configuration list for PBXNativeTarget "Pods-SendBinaryCoinTests" */;
 			buildPhases = (
-				1A84563EA74BE57040A2501201A1C058 /* Headers */,
-				266398A40DDE5E185F95023BF2BD704A /* Sources */,
-				0000B35D57859D32777591D7770D808D /* Frameworks */,
-				511941CA1C3A253D9273BB414F728545 /* Resources */,
+				FA38EE27E14C079927FAF94516CF2EC5 /* Headers */,
+				55B8714E564F348FB06D28AB8D3AC759 /* Sources */,
+				C521DD1D24FE9F93DA2358FE8282903B /* Frameworks */,
+				BEE8452128145A8C1B436780F3A2D4C4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C362AF83292119652E82DE579ED2693 /* PBXTargetDependency */,
+				0BC35C1596F99D0CF9A2E2EF8FF3AC9B /* PBXTargetDependency */,
+				B88424928280C9DE3C206CD22FB0A9D6 /* PBXTargetDependency */,
 			);
 			name = "Pods-SendBinaryCoinTests";
 			productName = "Pods-SendBinaryCoinTests";
@@ -420,25 +375,6 @@
 			name = "Pods-SendBinaryCoin";
 			productName = "Pods-SendBinaryCoin";
 			productReference = 13B8EEA8D39817AB9022E764B15E332D /* Pods_SendBinaryCoin.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7F746587444173B110F718C002337788 /* Pods-SendBinaryCoin-SendBinaryCoinUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA225C10AE2F5CDE85A53B6DAA84B64A /* Build configuration list for PBXNativeTarget "Pods-SendBinaryCoin-SendBinaryCoinUITests" */;
-			buildPhases = (
-				D87355F25EF548AA845830E8D0399B9B /* Headers */,
-				47AFCDBF89314AFA3E273699C739B7EF /* Sources */,
-				F77C25E06D1BFB259661132821C5D03F /* Frameworks */,
-				FCD4B6498B8954496DD24A3B61283042 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				19718381FFADA4AAEE686CD634630952 /* PBXTargetDependency */,
-			);
-			name = "Pods-SendBinaryCoin-SendBinaryCoinUITests";
-			productName = "Pods-SendBinaryCoin-SendBinaryCoinUITests";
-			productReference = F11065F1CF41D7148724C2BFD609572E /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */ = {
@@ -477,12 +413,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0C5CAA0549156F8BAEA4B4B5C7FB7C1E /* Products */;
+			productRefGroup = 3B59D6C20573EBE69F866AD70B6F41FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				18A79350E730D17C4CF567FE8E032557 /* Pods-SendBinaryCoin */,
-				7F746587444173B110F718C002337788 /* Pods-SendBinaryCoin-SendBinaryCoinUITests */,
 				03985EDBFD75652CEF61EA50FB8155A6 /* Pods-SendBinaryCoinTests */,
 				ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */,
 			);
@@ -497,13 +432,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		511941CA1C3A253D9273BB414F728545 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A8F2D5EB06EDA23EAA9B2EF353782A4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,7 +439,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCD4B6498B8954496DD24A3B61283042 /* Resources */ = {
+		BEE8452128145A8C1B436780F3A2D4C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,19 +449,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		266398A40DDE5E185F95023BF2BD704A /* Sources */ = {
+		55B8714E564F348FB06D28AB8D3AC759 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D904464270FDAC851159C676526D2F /* Pods-SendBinaryCoinTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47AFCDBF89314AFA3E273699C739B7EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D635C88DBD3DA61B32E3861D76CB99C1 /* Pods-SendBinaryCoin-SendBinaryCoinUITests-dummy.m in Sources */,
+				E2A7A8A14496AA7C4D97AA83CDEE283A /* Pods-SendBinaryCoinTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,24 +509,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		19718381FFADA4AAEE686CD634630952 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapshotTesting;
-			target = ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */;
-			targetProxy = EB1E2A340C6DD2B3B77DFABFB08190BE /* PBXContainerItemProxy */;
-		};
-		4C362AF83292119652E82DE579ED2693 /* PBXTargetDependency */ = {
+		0BC35C1596F99D0CF9A2E2EF8FF3AC9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SendBinaryCoin";
 			target = 18A79350E730D17C4CF567FE8E032557 /* Pods-SendBinaryCoin */;
-			targetProxy = 7B129B77697345C57FCF702BB61B1526 /* PBXContainerItemProxy */;
+			targetProxy = 42A2E21A21E71015A61DC322ECA5E166 /* PBXContainerItemProxy */;
+		};
+		B88424928280C9DE3C206CD22FB0A9D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapshotTesting;
+			target = ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */;
+			targetProxy = 45601148D6D50CCA98FB90608031F71B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		120D2CB3D8B765FB9ADB976253E77CA9 /* Release */ = {
+		8CE2BCE5A92CF95508CD191C0422D098 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDC0F27C4B97C7033ACE74E4F15ED74E /* Pods-SendBinaryCoinTests.release.xcconfig */;
+			baseConfigurationReference = E52E05EDFF4ED785FCB88523B17F134C /* Pods-SendBinaryCoinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -641,80 +561,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		340FEBDEC0A342C65FB7DC4A3A83C741 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BA100617ACC04C3000E23BB35EBC5AB /* Pods-SendBinaryCoin-SendBinaryCoinUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8DF3C6BDABCB6BB8F05D355052086F2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2932AC224AB413C107F040E6612C5487 /* Pods-SendBinaryCoinTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -879,9 +725,9 @@
 			};
 			name = Debug;
 		};
-		B89BCBFF855F6BE1263589E42FA0B660 /* Release */ = {
+		C730C3734E32D38C6B342012D9061259 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50CBC1C106BC4BFFF0DCA4B2B10D2C2F /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */;
+			baseConfigurationReference = 8C942E1A684B179714AD18CD2883FB5A /* Pods-SendBinaryCoinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -893,7 +739,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -902,7 +748,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -911,15 +757,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		DFD84A72FBF693658E5B90D7521D202C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38E7D9EA086AE7F2D3DCCBAED6864E55 /* Pods-SendBinaryCoin.release.xcconfig */;
+			baseConfigurationReference = 24658545478346D6385EEE685135184B /* Pods-SendBinaryCoin.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -993,7 +838,7 @@
 		};
 		F4E8A077DE92E0C2D7CAC7C8E2A6C7EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37D5C6F68FD15BE2255E51BDF8EDB0AF /* Pods-SendBinaryCoin.debug.xcconfig */;
+			baseConfigurationReference = 5F02131E5659D0887BD96F4CD17CCD87 /* Pods-SendBinaryCoin.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1040,11 +885,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		652AEC68436367C78F771A7BA8581AFD /* Build configuration list for PBXNativeTarget "Pods-SendBinaryCoinTests" */ = {
+		735429A09C6FD5D4C82F56742E408621 /* Build configuration list for PBXNativeTarget "Pods-SendBinaryCoinTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DF3C6BDABCB6BB8F05D355052086F2D /* Debug */,
-				120D2CB3D8B765FB9ADB976253E77CA9 /* Release */,
+				C730C3734E32D38C6B342012D9061259 /* Debug */,
+				8CE2BCE5A92CF95508CD191C0422D098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1063,15 +908,6 @@
 			buildConfigurations = (
 				F4E8A077DE92E0C2D7CAC7C8E2A6C7EE /* Debug */,
 				DFD84A72FBF693658E5B90D7521D202C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA225C10AE2F5CDE85A53B6DAA84B64A /* Build configuration list for PBXNativeTarget "Pods-SendBinaryCoin-SendBinaryCoinUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				340FEBDEC0A342C65FB7DC4A3A83C741 /* Debug */,
-				B89BCBFF855F6BE1263589E42FA0B660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

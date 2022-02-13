@@ -15,6 +15,14 @@ protocol RequestTransactionViewDelegate: AnyObject {
     func didSendRequest()
 }
 
+protocol RequestTransactionViewProtocol {
+    var delegate: RequestTransactionViewDelegate? { get set }
+    func set(viewData: RequestTransactionViewData)
+    func set(recipientValue: String)
+    func reloadReceiveCoin(value: String)
+    func set(exchangeRate: String)
+}
+
 final class RequestTransactionView: UIView {
 
     // MARK: - Properties
@@ -154,8 +162,14 @@ final class RequestTransactionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: - Public
+    // MARK: Action
 
+    @objc func didTouchSendButton() {
+        delegate?.didSendRequest()
+    }
+}
+
+extension RequestTransactionView: RequestTransactionViewProtocol {
     func set(viewData: RequestTransactionViewData) {
         data = viewData
     }
@@ -173,12 +187,6 @@ final class RequestTransactionView: UIView {
 
     func set(exchangeRate: String) {
         self.exchangeRate = exchangeRate
-    }
-
-    // MARK: Action
-
-    @objc func didTouchSendButton() {
-        delegate?.didSendRequest()
     }
 }
 

@@ -13,14 +13,16 @@ final class RequestTransactionViewController: UIViewController {
     
     private let presenter: RequestTransactionPresenterInputProtocol
 
-    // MARK: - Private Properties
+    // MARK: - Public Properties
 
-    private var containerView = RequestTransactionView()
+    var containerView: RequestTransactionViewProtocol
 
     // MARK: - Inits
     
-    init(presenter: RequestTransactionPresenterInputProtocol) {
+    init(presenter: RequestTransactionPresenterInputProtocol,
+         containerView: RequestTransactionViewProtocol = RequestTransactionView()) {
         self.presenter = presenter
+        self.containerView = containerView
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -42,13 +44,11 @@ final class RequestTransactionViewController: UIViewController {
         presenter.viewDidAppear()
     }
     
-    // MARK: - Public Methods
-    
     // MARK: - Private Methods
 
-    func setupView() {
+    private func setupView() {
         containerView.delegate = self
-        view = containerView
+        view = containerView as? UIView
     }
     
     // MARK: - Actions

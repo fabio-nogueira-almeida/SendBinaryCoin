@@ -13,8 +13,6 @@ final class RequestTransactionViewController: UIViewController {
     
     private let presenter: RequestTransactionPresenterInputProtocol
 
-    // MARK: - Internal Properties
-
     // MARK: - Private Properties
 
     private var containerView = RequestTransactionView()
@@ -35,7 +33,7 @@ final class RequestTransactionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = containerView
+        setupView()
         presenter.viewDidLoad()
     }
     
@@ -44,9 +42,14 @@ final class RequestTransactionViewController: UIViewController {
         presenter.viewDidAppear()
     }
     
-    // MARK: - Internal Methods
+    // MARK: - Public Methods
     
     // MARK: - Private Methods
+
+    func setupView() {
+        containerView.delegate = self
+        view = containerView
+    }
     
     // MARK: - Actions
 }
@@ -55,5 +58,57 @@ final class RequestTransactionViewController: UIViewController {
 extension RequestTransactionViewController: RequestTransactionPresenterOutputProtocol {
     func set(title: String) {
         navigationController?.title = title
+    }
+
+    func set(data: RequestTransactionViewData) {
+        containerView.set(viewData: data)
+    }
+
+    func didConvertCoin(value: String) {
+        containerView.reloadReceiveCoin(value: value)
+    }
+
+    func didFindExchangeRate(value: String) {
+        containerView.set(exchangeRate: value)
+    }
+
+    func didValidatePhone(isValid: Bool) {
+        if !isValid {
+            let alertViewController = UIAlertController(title: RequestTransactionViewStrings.phoneInvalid,
+                                                        message: nil,
+                                                        preferredStyle: .alert)
+
+            let action = UIAlertAction(title: RequestTransactionViewStrings.phoneOkButton, style: .default) { _ in }
+            alertViewController.addAction(action)
+
+            self.present(alertViewController, animated: true, completion: nil)
+        }
+    }
+}
+
+// MARK: - RequestTransactionViewDelegate
+
+extension RequestTransactionViewController: RequestTransactionViewDelegate {
+    func didSendRequest() {
+        let alertViewController = UIAlertController(title: RequestTransactionViewStrings.successMessage,
+                                                    message: nil,
+                                                    preferredStyle: .alert)
+
+        let action = UIAlertAction(title: RequestTransactionViewStrings.phoneOkButton, style: .default) { _ in }
+        alertViewController.addAction(action)
+
+        self.present(alertViewController, animated: true, completion: nil)
+    }
+
+    func didEnter(country: Country) {
+        presenter.didSelect(country: country)
+    }
+
+    func didEnter(coin: String) {
+        presenter.didAddNew(coin: coin)
+    }
+
+    func didEnter(phone: String) {
+        presenter.didAddNew(phone: phone)
     }
 }

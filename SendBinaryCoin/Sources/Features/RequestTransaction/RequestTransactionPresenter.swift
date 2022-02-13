@@ -34,6 +34,18 @@ final class RequestTransactionPresenter {
 
 // MARK: - Input Protocol
 extension RequestTransactionPresenter: RequestTransactionPresenterInputProtocol {
+    func didSelect(country: Country) {
+        interactor.findExchangeRate(for: country)
+    }
+
+    func didAddNew(coin: String) {
+        interactor.convert(coin: coin)
+    }
+
+    func didAddNew(phone: String) {
+        interactor.shouldValidate(phone: phone)
+    }
+
     func viewDidAppear() {
         trackScreenView()
     }
@@ -43,6 +55,23 @@ extension RequestTransactionPresenter: RequestTransactionPresenterInputProtocol 
 extension RequestTransactionPresenter: RequestTransactionInteractorOutputProtocol {
     func viewDidLoad() {
         viewController?.set(title: RequestTransactionViewStrings.navigationTitle)
+        interactor.fetchData()
+    }
+
+    func fetchDataSuccess(viewData: RequestTransactionViewData) {
+        viewController?.set(data: viewData)
+    }
+
+    func didFindExchangeRate(value: String) {
+        viewController?.didFindExchangeRate(value: value)
+    }
+
+    func didConvertCoin(value: String) {
+        viewController?.didConvertCoin(value: value)
+    }
+
+    func didValidatePhone(isValid: Bool) {
+        viewController?.didValidatePhone(isValid: isValid)
     }
 }
 

@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F88F2875-D999-415D-8BEE-7761AF6B5695"
+            uuid = "7AFA4A5C-BE61-4262-A478-438CEB3F34A1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SendBinaryCoin/Sources/Features/RequestTransaction/View/RequestTransactionView.swift"
+            filePath = "SendBinaryCoin/Sources/Features/RequestTransaction/RequestTransactionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "buildViewHierarchy()"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "didValidatePhone(isValid:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFE721FA-DE25-4791-8220-228408181DB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendBinaryCoin/Sources/Features/RequestTransaction/RequestTransactionInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "shouldValidate(phone:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

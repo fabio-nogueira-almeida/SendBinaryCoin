@@ -25,6 +25,9 @@
 		2808D3A027B85E3D000DF9F3 /* RequestTransactionViewStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D39F27B85E3D000DF9F3 /* RequestTransactionViewStrings.swift */; };
 		2808D3A327B85EB1000DF9F3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3A227B85EB1000DF9F3 /* String.swift */; };
 		2808D3A527B8654C000DF9F3 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3A427B8654C000DF9F3 /* UIStackView.swift */; };
+		2808D3A727B87252000DF9F3 /* RequestTransactionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3A627B87252000DF9F3 /* RequestTransactionViewData.swift */; };
+		2808D3A927B872F8000DF9F3 /* RateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3A827B872F8000DF9F3 /* RateRequest.swift */; };
+		2808D3AB27B87695000DF9F3 /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808D3AA27B87695000DF9F3 /* CountryDataSource.swift */; };
 		68BBF478697758DD300073EE /* Pods_SendBinaryCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C08D253BC38FB56FE5D4DD /* Pods_SendBinaryCoinTests.framework */; };
 		A47FAF99BA467C675335533F /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D2EA231AFEBBB61125C9DF /* Pods_SendBinaryCoin_SendBinaryCoinUITests.framework */; };
 		E64C4399708D8196C5589309 /* Pods_SendBinaryCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */; };
@@ -72,6 +75,9 @@
 		2808D39F27B85E3D000DF9F3 /* RequestTransactionViewStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionViewStrings.swift; sourceTree = "<group>"; };
 		2808D3A227B85EB1000DF9F3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		2808D3A427B8654C000DF9F3 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		2808D3A627B87252000DF9F3 /* RequestTransactionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTransactionViewData.swift; sourceTree = "<group>"; };
+		2808D3A827B872F8000DF9F3 /* RateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRequest.swift; sourceTree = "<group>"; };
+		2808D3AA27B87695000DF9F3 /* CountryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataSource.swift; sourceTree = "<group>"; };
 		4971B988EE2F559DB0E6794E /* Pods_SendBinaryCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendBinaryCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87339F56C19180A5E1FAA9D3 /* Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoin-SendBinaryCoinUITests/Pods-SendBinaryCoin-SendBinaryCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E15E0D2AF54D46A0EAF6015 /* Pods-SendBinaryCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBinaryCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-SendBinaryCoinTests/Pods-SendBinaryCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 		2808D36127B846E6000DF9F3 /* SendBinaryCoinUITests */ = {
 			isa = PBXGroup;
 			children = (
+				283F9D4727B8AC26009DFA63 /* Snapshot */,
 			);
 			path = SendBinaryCoinUITests;
 			sourceTree = "<group>";
@@ -222,6 +229,7 @@
 		2808D39527B84DAE000DF9F3 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				2808D3A827B872F8000DF9F3 /* RateRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -246,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				2808D39F27B85E3D000DF9F3 /* RequestTransactionViewStrings.swift */,
+				2808D3A627B87252000DF9F3 /* RequestTransactionViewData.swift */,
+				2808D3AA27B87695000DF9F3 /* CountryDataSource.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -257,6 +267,13 @@
 				2808D3A427B8654C000DF9F3 /* UIStackView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		283F9D4727B8AC26009DFA63 /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Snapshot;
 			sourceTree = "<group>";
 		};
 		DE3350D427986437E7D0F976 /* Pods */ = {
@@ -505,12 +522,15 @@
 				2808D39827B850A8000DF9F3 /* RateResponse.swift in Sources */,
 				2808D38A27B84CD8000DF9F3 /* RequestTransactionConfigurator.swift in Sources */,
 				2808D38D27B84CD8000DF9F3 /* RequestTransactionRouter.swift in Sources */,
+				2808D3A927B872F8000DF9F3 /* RateRequest.swift in Sources */,
 				2808D38827B84CD8000DF9F3 /* RequestTransactionProtocols.swift in Sources */,
 				2808D39327B84D8B000DF9F3 /* ExchangeCoin.swift in Sources */,
 				2808D38927B84CD8000DF9F3 /* RequestTransactionPresenter.swift in Sources */,
 				2808D34227B846E2000DF9F3 /* AppDelegate.swift in Sources */,
 				2808D39127B84D74000DF9F3 /* Network.swift in Sources */,
+				2808D3AB27B87695000DF9F3 /* CountryDataSource.swift in Sources */,
 				2808D3A027B85E3D000DF9F3 /* RequestTransactionViewStrings.swift in Sources */,
+				2808D3A727B87252000DF9F3 /* RequestTransactionViewData.swift in Sources */,
 				2808D38C27B84CD8000DF9F3 /* RequestTransactionViewController.swift in Sources */,
 				2808D34427B846E2000DF9F3 /* SceneDelegate.swift in Sources */,
 				2808D3A527B8654C000DF9F3 /* UIStackView.swift in Sources */,

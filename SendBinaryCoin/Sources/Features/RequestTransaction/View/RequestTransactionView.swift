@@ -8,11 +8,41 @@
 import Foundation
 import UIKit
 
+protocol RequestTransactionViewDelegate: AnyObject {
+    func didEnter(country: Country)
+    func didEnter(coin: String)
+    func didEnter(phone: String)
+    func didSendRequest()
+}
+
 final class RequestTransactionView: UIView {
 
     // MARK: - Properties
 
-    let defaultSpacing = 12.0
+    private var data: RequestTransactionViewData?
+    private let defaultSpacing = 12.0
+    private let pickerView = UIPickerView()
+
+    private var countrySelected: Country? {
+        didSet {
+            if let countrySelected = countrySelected {
+                delegate?.didEnter(country: countrySelected)
+            }
+        }
+    }
+
+    private var exchangeRate: String? {
+        didSet {
+            if let value = exchangeRate,
+               let currency = countrySelected?.currency {
+                rateLabel.text = String(format: RequestTransactionViewStrings.rateDescription, "\(value) \(currency)")
+            }
+        }
+    }
+
+    // MARK: - Public Properties
+
+    weak var delegate: RequestTransactionViewDelegate?
 
     // MARK: - IBOutlets
 
@@ -40,6 +70,7 @@ final class RequestTransactionView: UIView {
         view.placeholder = RequestTransactionViewStrings.country
         view.textAlignment = .center
         view.textColor = .systemOrange
+        view.delegate = self
         return view
     }()
 
@@ -63,6 +94,16 @@ final class RequestTransactionView: UIView {
         return view
     }()
 
+    private(set) lazy var phoneTextField: UITextField = {
+        let view = UITextField()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.placeholder = RequestTransactionViewStrings.recipientPhone
+        view.textAlignment = .center
+        view.layer.borderWidth = 0.5
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        return view
+    }()
+
     private(set) lazy var sendCoinTextField: UITextField = {
         let view = UITextField()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -80,14 +121,15 @@ final class RequestTransactionView: UIView {
         view.textAlignment = .center
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.lightGray.cgColor
+        view.isEnabled = false
         return view
     }()
 
     private(set) lazy var rateLabel: UILabel = {
         let view = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = RequestTransactionViewStrings.rateDescription
         view.textAlignment = .center
+        view.text = " "
         return view
     }()
 
@@ -95,6 +137,7 @@ final class RequestTransactionView: UIView {
         let view = UIButton(type: .roundedRect)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.setTitle(RequestTransactionViewStrings.sendButton, for: .normal)
+        view.addTarget(self, action: #selector(didTouchSendButton), for: .touchUpInside)
         view.setTitleColor(.white, for: .normal)
         view.backgroundColor = .systemOrange
         return view
@@ -110,6 +153,33 @@ final class RequestTransactionView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    // MARK: - Public
+
+    func set(viewData: RequestTransactionViewData) {
+        data = viewData
+    }
+
+
+    func set(recipientValue: String) {
+        receiveCoinTextField.text = recipientValue
+    }
+
+    func reloadReceiveCoin(value: String) {
+        if let currency = countrySelected?.currency {
+            receiveCoinTextField.text = value + " \(currency)"
+        }
+    }
+
+    func set(exchangeRate: String) {
+        self.exchangeRate = exchangeRate
+    }
+
+    // MARK: Action
+
+    @objc func didTouchSendButton() {
+        delegate?.didSendRequest()
+    }
 }
 
 
@@ -123,6 +193,7 @@ extension RequestTransactionView: ViewCode {
 
         mainStackView.addArrangedSubview(nameTextField)
         mainStackView.addArrangedSubview(lastNameTextField)
+        mainStackView.addArrangedSubview(phoneTextField)
 
         mainStackView.addArrangedSubview(sendCoinTextField)
         mainStackView.addArrangedSubview(receiveCoinTextField)
@@ -134,10 +205,10 @@ extension RequestTransactionView: ViewCode {
     func setupConstraints() {
         NSLayoutConstraint.activate([
             mainStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            mainStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            mainStackView.topAnchor.constraint(equalTo: topAnchor, constant: 100),
             mainStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: defaultSpacing),
             mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -defaultSpacing),
-            mainStackView.heightAnchor.constraint(equalToConstant: 300)
+            mainStackView.heightAnchor.constraint(equalToConstant: 400)
         ])
 
         NSLayoutConstraint.activate([
@@ -164,11 +235,68 @@ extension RequestTransactionView: ViewCode {
             lastNameTextField.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: -defaultSpacing),
         ])
 
+        NSLayoutConstraint.activate([
+            phoneTextField.leadingAnchor.constraint(equalTo: mainStackView.leadingAnchor, constant: defaultSpacing),
+            phoneTextField.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: -defaultSpacing),
+        ])
+
         sendCoinTextField.leadingAnchor.constraint(equalTo: mainStackView.leadingAnchor, constant: defaultSpacing).isActive = true
         receiveCoinTextField.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: -defaultSpacing).isActive = true
     }
 
     func setupAdditionalConfiguration() {
         backgroundColor = .darkGray
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        sendCoinTextField.delegate = self
+        phoneTextField.delegate = self
+        countryTextField.inputView = pickerView
+        countryTextField.becomeFirstResponder()
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension RequestTransactionView: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if range.location == 0 && range.length == 1 {
+            sendCoinTextField.text = ""
+            receiveCoinTextField.text = ""
+        } else if let value = textField.text, textField == sendCoinTextField {
+            delegate?.didEnter(coin: value)
+        }
+        return true
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let value = textField.text, textField == phoneTextField {
+            delegate?.didEnter(phone: value)
+        }
+    }
+}
+
+// MARK: - UIPickerViewDataSource
+
+extension RequestTransactionView: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return data?.countries.count ?? 0
+    }
+}
+
+// MARK: - UIPickerViewDelegate
+
+extension RequestTransactionView: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return data?.countries[row].name
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let country = data?.countries[row]
+        countrySelected = country
+        countryTextField.text = country?.name
     }
 }
